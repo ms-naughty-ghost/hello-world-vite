@@ -85,7 +85,7 @@ touch .prettierrc.json
   "printWidth": 80,
   "singleQuote": true,
   "tabWidth": 2,
-  "semi": false,
+  "semi": true,
   "bracketSpacing": true,
   "arrowParens": "always"
 }
