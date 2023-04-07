@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Timer from './components/Timer';
+import NowDate from './components/Now';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
+        <NowDate />
         <Timer max={10} />
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
