@@ -6,7 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,json,html,css}",
+    "lint:es": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint:es:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "lint:style": "stylelint src/**/*.{css,scss,less}",
+    "lint:style:fix": "stylelint --fix src/**/*.{css,scss,less}",
+    "lint:fix": "yarn run lint:es:fix && yarn run lint:style:fix",
+    "fix": "yarn run format && yarn run lint:fix"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -19,9 +26,15 @@
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.7",
+    "stylelint": "^15.4.0",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-order": "^6.0.3",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   }
