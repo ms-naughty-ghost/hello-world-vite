@@ -22,7 +22,7 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <NowDate />
-        <Timer max={10} />
+        <Timer max={100} />
         <UserRegisterForm />
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
