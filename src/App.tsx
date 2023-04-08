@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import Timer from './components/Timer';
 import NowDate from './components/Now';
+import UserRegisterForm from './components/UserRegisterForm';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
       <div className="card">
         <NowDate />
         <Timer max={10} />
+        <UserRegisterForm />
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
